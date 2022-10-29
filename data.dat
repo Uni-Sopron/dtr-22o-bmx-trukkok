@@ -2,7 +2,7 @@ set Tricks := Tailwhip Barspin Threesixty Tabletop Invert Backflip Flair Frontfl
 set Elements := Spine Bank Quarter Funbox Grindbox Rail Halfpipe Ramp WallRide Bowl Volcano Pool Hubba Pyramid;
 
 param treshold := 1;
-param time_of_a_round := 2;
+param time_of_a_round := 3;
 
 param value :
 	             Spine	Bank	Quarter	Funbox	Grindbox	Rail	Halfpipe	Ramp	WallRide	Bowl	Volcano	  Pool	Hubba	Pyramid:=
