@@ -6,6 +6,5 @@ A szabályok a következők:
 - Nem lehet megsérülni. Sérülés után nem folytathatjuk a versenyt.
 - Egy trükköt nem lehet kétszer végrehajtani egymás után, változatos futamnak kell lennie.
 - Legalább 4 különböző trükköt kell csinálni.
-- Néhány elemet nem lehet egymás után használni (pl. Nem lehet kétszer fordulni 180-at egy negyedíven értelemszerűen).
 
 Milyen trükköket csináljunk, milyen elemeken, hogy maximum pontot kapjunk 3 perc alatt?
