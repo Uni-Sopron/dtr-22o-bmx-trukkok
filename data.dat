@@ -1,8 +1,8 @@
 set Tricks := Tailwhip Barspin Threesixty Tabletop Invert Backflip Flair Frontflip Double_Tailwhip Aerial_Tailwhip;
 set Elements := Spine Bank Quarter Funbox Grindbox Rail Halfpipe Ramp WallRide Bowl Volcano Pool Hubba Pyramid;
 
-param treshold := 1;
-param time_of_a_round := 3;
+param treshold := 1000;
+param time_of_a_round := 2;
 
 param value :
 	             Spine	Bank	Quarter	Funbox	Grindbox	Rail	Halfpipe	Ramp	WallRide	Bowl	Volcano	  Pool	Hubba	Pyramid:=
@@ -19,26 +19,26 @@ Aerial_Tailwhip	   	89	    57	    82	    92	    96	   	42	    86	        94	    
 
 param execution_time :
 	            Spine	Bank	Quarter	Funbox	Grindbox	Rail	Halfpipe	Ramp	WallRide	Bowl	Volcano	Pool	Hubba	Pyramid:=
-Tailwhip	   	 0.50	0.00	0.30	0.00	0.50	0.10	    0.20	0.20	0.40	    0.10	0.20	0.00	0.10	0.10
-Barspin	       	    	0.20	0.40	0.50	0.10	0.10	0.30	    0.10	0.50	0.10	    0.00	0.10	0.30	0.20	0.20
-Threesixty	   	 0.50	0.30	0.20	0.10	0.20	0.50	    0.30	0.30	0.30	    0.50	0.20	0.30	0.30	0.10
-Tabletop	    	0.70	0.50	0.00	0.20	0.20	0.30	    0.10	0.20	0.50	    0.50	0.20	0.40	0.40	0.50
-Invert	            	0.60	0.50	0.00	0.40	0.40	0.40	    0.40	0.00	0.30	    0.40	0.10	0.00	0.50	0.10
-Backflip	   	 0.70	0.40	0.10	0.40	0.40	0.00	    0.40	0.20	0.10	    0.10	0.00	0.20	0.30	0.40
-Flair	            	0.10	0.50	0.20	0.40	0.50	0.20	    0.30	0.10	0.10	    0.40	0.10	0.40	0.10	0.40
-Frontflip	    	0.80	0.10	0.50	0.20	0.50	0.00	    0.30	0.10	0.20	    0.40	0.50	0.10	0.00	0.10
-Double_Tailwhip 	0.70	0.50	0.10	0.40	0.50	0.00	    0.00	0.20	0.30	    0.00	0.40	0.40	0.20	0.50
-Aerial_Tailwhip	        0.70	0.40	0.30	0.50	0.00	0.50	    0.20	0.10	0.30	    0.20	0.10	0.00	0.00	0.10;
+Tailwhip	    0.50	0.05	0.30	0.60	0.50	0.10	    0.20	0.20	0.40	    0.10	0.20	0.00	0.10	0.10
+Barspin	        0.20	0.40	0.50	0.10	0.10	0.30	    0.10	0.50	0.10	    0.20	0.10	0.30	0.20	0.20
+Threesixty	    0.50	0.30	0.20	0.10	0.20	0.50	    0.30	0.30	0.30	    0.50	0.20	0.30	0.30	0.10
+Tabletop	    0.70	0.50	0.30	0.20	0.20	0.30	    0.10	0.20	0.50	    0.50	0.20	0.40	0.40	0.50
+Invert	        0.60	0.50	0.40	0.40	0.40	0.40	    0.40	0.50	0.30	    0.40	0.10	0.45	0.50	0.10
+Backflip	    0.70	0.40	0.10	0.40	0.40	0.30	    0.40	0.20	0.10	    0.10	0.00	0.20	0.30	0.40
+Flair	        0.10	0.50	0.20	0.40	0.50	0.20	    0.30	0.10	0.10	    0.40	0.10	0.40	0.10	0.40
+Frontflip	    0.80	0.10	0.50	0.20	0.50	0.20	    0.30	0.10	0.20	    0.40	0.50	0.10	0.40	0.10
+Double_Tailwhip	0.70	0.50	0.10	0.40	0.50	0.10	    0.20	0.20	0.30	    0.35	0.40	0.40	0.20	0.50
+Aerial_Tailwhip	0.70	0.40	0.30	0.50	0.10	0.50	    0.20	0.10	0.30	    0.20	0.10	0.70	0.10	0.10;
 
 param chance_of_injury :
 	        Spine	Bank	Quarter	Funbox	Grindbox	Rail	Halfpipe	Ramp	WallRide	Bowl	Volcano	Pool	Hubba	Pyramid:=
-Tailwhip	    0.30	0.05	0.01	0.04	0.05	0.02	    0.03	0.02	0.05	    0.06	0.06	0.06	0.01	0.05
-Barspin	        0.06	0.05	0.00	0.06	0.06	0.04	    0.02	0.02	0.04	    0.01	0.03	0.01	0.05	0.02
-Threesixty	    0.05	0.00	0.03	0.00	0.05	0.04	    0.00	0.04	0.06	    0.02	0.00	0.02	0.05	0.06
-Tabletop	    0.04	0.01	0.04	0.05	0.05	0.01	    0.01	0.06	0.01	    0.03	0.04	0.02	0.02	0.03
-Invert	        0.03	0.00	0.00	0.05	0.01	0.04	    0.01	0.00	0.01	    0.05	0.04	0.05	0.03	0.02
-Backflip	    0.06	0.04	0.04	0.04	0.01	0.03	    0.04	0.01	0.01	    0.00	0.04	0.00	0.06	0.04
-Flair	        0.02	0.05	0.00	0.02	0.04	0.00	    0.05	0.04	0.05	    0.02	0.05	0.03	0.03	0.05
-Frontflip	    0.02	0.04	0.06	0.03	0.06	0.06	    0.01	0.02	0.06	    0.01	0.05	0.02	0.06	0.05
-Double_Tailwhip	0.06	0.06	0.04	0.05	0.01	0.04	    0.04	0.05	0.03	    0.02	0.03	0.02	0.03	0.03
-Aerial_Tailwhip	0.05	0.05	0.01	0.03	0.00	0.03	    0.02	0.02	0.00	    0.06	0.00	0.01	0.00	0.03;
+Tailwhip	    53		37		89		29		25		22		59			40		53			50		44		30		46 		77
+Barspin	        7		21		36		66		13		75		27			32		37			87		4		43		99		96
+Threesixty	    66		2		34		73		57		76		2			71		72			7		47		82		10		72
+Tabletop	    90		73		21		9		91		78		30			48		97			49		91		98		51		37
+Invert	        86		90		96		7		55		65		43			58		40			53		57		84		41		44
+Backflip	    47		22		39		91		80		99		74			52		24			81		39		75		8		23
+Flair	        60		48		93		100		82		35		10			91		75			56		57		77		5		58
+Frontflip	    4		7		80		89		78		69		9			39		47			11		32		29		30		30
+Double_Tailwhip	76		46		35		7		43		45		91			71		53			41		55		81		8		4
+Aerial_Tailwhip	87		43		71		73		9		56		80			53		35			50		97		10		49		18;

@@ -8,13 +8,13 @@ param treshold >=0;
 
 var do{Tricks, Elements} binary;
 
-s.t. TimeConstraint{e in Elements}:
+s.t. TimeConstraint{e in Elements }:
     sum{t in Tricks} do[t, e] * execution_time[t, e] <= time_of_a_round;
 
 s.t. InjuryConstraint {e in Elements}:
     sum{t in Tricks} do[t, e] * chance_of_injury[t, e] <= treshold;
 
-#s.t. TrickConstraint {e in Elements}:
- #   sum{t in Tricks} do[t, e] != do[t-1, e-1];
 
 maximize Points: sum{t in Tricks, e in Elements} do[t,e] * value[t,e];
+
+end;
