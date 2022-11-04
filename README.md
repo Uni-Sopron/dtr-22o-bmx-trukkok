@@ -6,6 +6,7 @@ A versenyzőink nem feltétlenül ugyanazokat a trükköket tudják végrehajtan
 Figyelembe kell venni hogy a trükkök kivitelezésére 3 perc áll rendelkezésre és egyes trükkök végrehajtása több pontot ér mint mások.
 A versenyzőknek az összes trükköt be kell mutatniuk amit begyakoroltak legalább egyszer, kétszer egymás után ugyan azt a trükköt nem csinálhatják meg.
 
+Milyen trükköket csináljunk, milyen elemeken, hogy maximum pontot kapjunk 3 perc alatt?
 Hogyan tervezzük meg a versenyzőink futamát, hogy pontjaikat maximalizáljuk, amellett, hogy:
   - [x] 3 perc áll rendelkezésükre
   - [x] nem sérülhetnek meg
