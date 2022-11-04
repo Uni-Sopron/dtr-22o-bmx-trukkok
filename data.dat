@@ -1,44 +1,47 @@
-set Tricks := Tailwhip Barspin Threesixty Tabletop Invert Backflip Flair Frontflip Double_Tailwhip Aerial_Tailwhip;
-set Elements := Spine Bank Quarter Funbox Grindbox Rail Halfpipe Ramp WallRide Bowl Volcano Pool Hubba Pyramid;
+set Riders := KEMPF KONRAD VUKMAN;
+set Tricks := Tailwhip Barspin Threesixty Invert Backflip Frontflip Flair SevenTwenty FiveFourty Footjam;
 
-param treshold := 1000;
-param time_of_a_round := 2;
+param time := 3;
 
-param value :
-	             Spine	Bank	Quarter	Funbox	Grindbox	Rail	Halfpipe	Ramp	WallRide	Bowl	Volcano	  Pool	Hubba	Pyramid:=
-Tailwhip	        80	    2	    31	    89	    60	   	 46	    23	        40	    72	    	 10	    48	    58	    43	            72
-Barspin	             	9	    100	    40	    8	    34	   	  7	    79	        41	    83	   	 71	    5	    11	    32	            75
-Threesixty	        15	    16	    33	    57	    96	   	 60	    27	        30	    94	   	 47	    8	    3	    31	            95
-Tabletop	        24	    2	    60	    19	    42	   	 57	    49	        33	    79	   	 20	    21	    61	    36	            58
-Invert	            	76	    22	    26	    25	    63	    	 93	    91	        12	    15	    	 77	    82	    39	    17	            27
-Backflip	        91	    49	    69	    71	    91	   	 11	    3	        18	    74	    	 33	    58	    15	    64	            19
-Flair	            	 1	    93	    57	    64	    53	    	26	    84	        78	    32	    	 51	    39	    53	    85	            60
-Frontflip	        95	    83	    6	    62	    59	    	90	    85	        13	    45	    	 85	    72	    39	    11	            13
-Double_Tailwhip	    	81	    69	    35	    50	    95	    	68	    2	        61	    44	   	 62	    17	    17	    44	            35
-Aerial_Tailwhip	   	89	    57	    82	    92	    96	   	42	    86	        94	    27	    	 55	    99	    77	    8	            20;
+param injury_treshold :=
+KEMPF 100
+KONRAD 80
+VUKMAN 90;
 
-param execution_time :
-	            Spine	Bank	Quarter	Funbox	Grindbox	Rail	Halfpipe	Ramp	WallRide	Bowl	Volcano	Pool	Hubba	Pyramid:=
-Tailwhip	    0.50	0.05	0.30	0.60	0.50	0.10	    0.20	0.20	0.40	    0.10	0.20	0.00	0.10	0.10
-Barspin	        0.20	0.40	0.50	0.10	0.10	0.30	    0.10	0.50	0.10	    0.20	0.10	0.30	0.20	0.20
-Threesixty	    0.50	0.30	0.20	0.10	0.20	0.50	    0.30	0.30	0.30	    0.50	0.20	0.30	0.30	0.10
-Tabletop	    0.70	0.50	0.30	0.20	0.20	0.30	    0.10	0.20	0.50	    0.50	0.20	0.40	0.40	0.50
-Invert	        0.60	0.50	0.40	0.40	0.40	0.40	    0.40	0.50	0.30	    0.40	0.10	0.45	0.50	0.10
-Backflip	    0.70	0.40	0.10	0.40	0.40	0.30	    0.40	0.20	0.10	    0.10	0.00	0.20	0.30	0.40
-Flair	        0.10	0.50	0.20	0.40	0.50	0.20	    0.30	0.10	0.10	    0.40	0.10	0.40	0.10	0.40
-Frontflip	    0.80	0.10	0.50	0.20	0.50	0.20	    0.30	0.10	0.20	    0.40	0.50	0.10	0.40	0.10
-Double_Tailwhip	0.70	0.50	0.10	0.40	0.50	0.10	    0.20	0.20	0.30	    0.35	0.40	0.40	0.20	0.50
-Aerial_Tailwhip	0.70	0.40	0.30	0.50	0.10	0.50	    0.20	0.10	0.30	    0.20	0.10	0.70	0.10	0.10;
+param canDo :
+     	    Tailwhip	Barspin	Threesixty	Invert	Backflip	Frontflip	Flair	SevenTwenty	FiveFourty	Footjam :=
+KEMPF	    0	            1	        1	    1	        0	        1	    0	            1	    1	    1
+KONRAD	    1	            0	        0	    0	        1           0	    1	            0	    0	    0
+VUKMAN	    1	            1	        1	    1	        1           1	    0	            1	    1	    0
+;
 
 param chance_of_injury :
-	        Spine	Bank	Quarter	Funbox	Grindbox	Rail	Halfpipe	Ramp	WallRide	Bowl	Volcano	Pool	Hubba	Pyramid:=
-Tailwhip	    53		37		89		29		25		22		59			40		53			50		44		30		46 		77
-Barspin	        7		21		36		66		13		75		27			32		37			87		4		43		99		96
-Threesixty	    66		2		34		73		57		76		2			71		72			7		47		82		10		72
-Tabletop	    90		73		21		9		91		78		30			48		97			49		91		98		51		37
-Invert	        86		90		96		7		55		65		43			58		40			53		57		84		41		44
-Backflip	    47		22		39		91		80		99		74			52		24			81		39		75		8		23
-Flair	        60		48		93		100		82		35		10			91		75			56		57		77		5		58
-Frontflip	    4		7		80		89		78		69		9			39		47			11		32		29		30		30
-Double_Tailwhip	76		46		35		7		43		45		91			71		53			41		55		81		8		4
-Aerial_Tailwhip	87		43		71		73		9		56		80			53		35			50		97		10		49		18;
+     	    Tailwhip	Barspin	Threesixty	Invert	Backflip	Frontflip	Flair	SevenTwenty	FiveFourty	Footjam :=
+KEMPF	    0	            14	        11	    9	        0	        19	    0	            30	    32	    9
+KONRAD	    12	            0	        0	    0	        13           0	    26	            0	    0	    0
+VUKMAN	    23	            20	        32	    7	        116          24	    0	            45	    35	    0
+;
+
+param value :=
+Tailwhip    20
+Barspin     15
+Threesixty  10
+Invert      24
+Backflip    50
+Frontflip   65
+Flair       45
+SevenTwenty 45
+FiveFourty  60
+Footjam     5;
+
+param execution_time :=
+Tailwhip    0.8
+Barspin     0.2
+Threesixty  1
+Invert      0.6
+Backflip    0.6
+Frontflip   0.5
+Flair       0.3
+SevenTwenty 0.7
+FiveFourty  0.4
+Footjam     0.05;

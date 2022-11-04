@@ -7,7 +7,8 @@ Figyelembe kell venni hogy a trükkök kivitelezésére 3 perc áll rendelkezés
 A versenyzőknek az összes trükköt be kell mutatniuk amit begyakoroltak legalább egyszer, kétszer egymás után ugyan azt a trükköt nem csinálhatják meg.
 
 Hogyan tervezzük meg a versenyzőink futamát, hogy pontjaikat maximalizáljuk, amellett, hogy:
-  - [ ] 3 perc áll rendelkezésükre
-  - [ ] nem sérülhetnek meg
+  - [x] 3 perc áll rendelkezésükre
+  - [x] nem sérülhetnek meg
   - [ ] egy trükköt nem lehet kétszer egymás után megcsinálni
-  - [ ] minden trükköt be kell mutatni, amit tudnak
+  - [x] minden trükköt be kell mutatni, amit tudnak
+  - [ ] ??
