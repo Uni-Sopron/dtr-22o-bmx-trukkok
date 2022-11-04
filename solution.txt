@@ -1,9 +1,9 @@
-Problem:    bmx_new
-Rows:       73
+Problem:    bmx
+Rows:       22
 Columns:    30 (30 integer, 30 binary)
-Non-zeros:  90
+Non-zeros:  120
 Status:     INTEGER OPTIMAL
-Objective:  Points = 578 (MAXimum)
+Objective:  Points = 483 (MAXimum)
 
    No.   Row name        Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
@@ -31,127 +31,25 @@ Objective:  Points = 578 (MAXimum)
                                    0            -0             = 
     12 OnlyDoIfCan[VUKMAN,Footjam]
                                    0            -0             = 
-    13 TimeConstraint[KEMPF,Tailwhip]
-                                   0                           3 
-    14 TimeConstraint[KEMPF,Barspin]
-                                 0.2                           3 
-    15 TimeConstraint[KEMPF,Threesixty]
-                                   1                           3 
-    16 TimeConstraint[KEMPF,Invert]
-                                 0.6                           3 
-    17 TimeConstraint[KEMPF,Backflip]
-                                   0                           3 
-    18 TimeConstraint[KEMPF,Frontflip]
-                                 0.5                           3 
-    19 TimeConstraint[KEMPF,Flair]
-                                   0                           3 
-    20 TimeConstraint[KEMPF,SevenTwenty]
-                                 0.7                           3 
-    21 TimeConstraint[KEMPF,FiveFourty]
-                                 0.4                           3 
-    22 TimeConstraint[KEMPF,Footjam]
-                                0.05                           3 
-    23 TimeConstraint[KONRAD,Tailwhip]
-                                 0.8                           3 
-    24 TimeConstraint[KONRAD,Barspin]
-                                   0                           3 
-    25 TimeConstraint[KONRAD,Threesixty]
-                                   0                           3 
-    26 TimeConstraint[KONRAD,Invert]
-                                   0                           3 
-    27 TimeConstraint[KONRAD,Backflip]
-                                 0.6                           3 
-    28 TimeConstraint[KONRAD,Frontflip]
-                                   0                           3 
-    29 TimeConstraint[KONRAD,Flair]
-                                 0.3                           3 
-    30 TimeConstraint[KONRAD,SevenTwenty]
-                                   0                           3 
-    31 TimeConstraint[KONRAD,FiveFourty]
-                                   0                           3 
-    32 TimeConstraint[KONRAD,Footjam]
-                                   0                           3 
-    33 TimeConstraint[VUKMAN,Tailwhip]
-                                 0.8                           3 
-    34 TimeConstraint[VUKMAN,Barspin]
-                                 0.2                           3 
-    35 TimeConstraint[VUKMAN,Threesixty]
-                                   1                           3 
-    36 TimeConstraint[VUKMAN,Invert]
-                                 0.6                           3 
-    37 TimeConstraint[VUKMAN,Backflip]
-                                   0                           3 
-    38 TimeConstraint[VUKMAN,Frontflip]
-                                 0.5                           3 
-    39 TimeConstraint[VUKMAN,Flair]
-                                   0                           3 
-    40 TimeConstraint[VUKMAN,SevenTwenty]
-                                 0.7                           3 
-    41 TimeConstraint[VUKMAN,FiveFourty]
-                                 0.4                           3 
-    42 TimeConstraint[VUKMAN,Footjam]
-                                   0                           3 
-    43 InjuryConstraint[KEMPF,Tailwhip]
-                                   0                         100 
-    44 InjuryConstraint[KEMPF,Barspin]
-                                  14                         100 
-    45 InjuryConstraint[KEMPF,Threesixty]
-                                  11                         100 
-    46 InjuryConstraint[KEMPF,Invert]
-                                   9                         100 
-    47 InjuryConstraint[KEMPF,Backflip]
-                                   0                         100 
-    48 InjuryConstraint[KEMPF,Frontflip]
-                                  19                         100 
-    49 InjuryConstraint[KEMPF,Flair]
-                                   0                         100 
-    50 InjuryConstraint[KEMPF,SevenTwenty]
-                                  30                         100 
-    51 InjuryConstraint[KEMPF,FiveFourty]
-                                  32                         100 
-    52 InjuryConstraint[KEMPF,Footjam]
-                                   9                         100 
-    53 InjuryConstraint[KONRAD,Tailwhip]
-                                  12                          80 
-    54 InjuryConstraint[KONRAD,Barspin]
-                                   0                          80 
-    55 InjuryConstraint[KONRAD,Threesixty]
-                                   0                          80 
-    56 InjuryConstraint[KONRAD,Invert]
-                                   0                          80 
-    57 InjuryConstraint[KONRAD,Backflip]
-                                  13                          80 
-    58 InjuryConstraint[KONRAD,Frontflip]
-                                   0                          80 
-    59 InjuryConstraint[KONRAD,Flair]
-                                  26                          80 
-    60 InjuryConstraint[KONRAD,SevenTwenty]
-                                   0                          80 
-    61 InjuryConstraint[KONRAD,FiveFourty]
-                                   0                          80 
-    62 InjuryConstraint[KONRAD,Footjam]
-                                   0                          80 
-    63 InjuryConstraint[VUKMAN,Tailwhip]
-                                  23                          90 
-    64 InjuryConstraint[VUKMAN,Barspin]
-                                  20                          90 
-    65 InjuryConstraint[VUKMAN,Threesixty]
-                                  32                          90 
-    66 InjuryConstraint[VUKMAN,Invert]
-                                   7                          90 
-    67 InjuryConstraint[VUKMAN,Backflip]
-                                   0                          90 
-    68 InjuryConstraint[VUKMAN,Frontflip]
-                                  24                          90 
-    69 InjuryConstraint[VUKMAN,Flair]
-                                   0                          90 
-    70 InjuryConstraint[VUKMAN,SevenTwenty]
-                                  45                          90 
-    71 InjuryConstraint[VUKMAN,FiveFourty]
-                                  35                          90 
-    72 InjuryConstraint[VUKMAN,Footjam]
-                                   0                          90 
-    73 Points                    578                             
+    13 AtLeastOnce[KEMPF]
+                                   5             1               
+    14 AtLeastOnce[KONRAD]
+                                   3             1               
+    15 AtLeastOnce[VUKMAN]
+                                   4             1               
+    16 TimeConstraint[KEMPF]
+                                2.25                           3 
+    17 TimeConstraint[KONRAD]
+                                 1.7                           3 
+    18 TimeConstraint[VUKMAN]
+                                 2.3                           3 
+    19 InjuryConstraint[KEMPF]
+                                  99                         100 
+    20 InjuryConstraint[KONRAD]
+                                  51                          80 
+    21 InjuryConstraint[VUKMAN]
+                                  89                          90 
+    22 Points                    483                             
 
    No. Column name       Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
@@ -180,9 +78,9 @@ Objective:  Points = 578 (MAXimum)
     12 doTrick[VUKMAN,Footjam]
                     *              0             0             1 
     13 doTrick[KEMPF,Barspin]
-                    *              1             0             1 
+                    *              0             0             1 
     14 doTrick[KEMPF,Threesixty]
-                    *              1             0             1 
+                    *              0             0             1 
     15 doTrick[KEMPF,Invert]
                     *              1             0             1 
     16 doTrick[KEMPF,Frontflip]
@@ -202,9 +100,9 @@ Objective:  Points = 578 (MAXimum)
     23 doTrick[VUKMAN,Tailwhip]
                     *              1             0             1 
     24 doTrick[VUKMAN,Barspin]
-                    *              1             0             1 
+                    *              0             0             1 
     25 doTrick[VUKMAN,Threesixty]
-                    *              1             0             1 
+                    *              0             0             1 
     26 doTrick[VUKMAN,Invert]
                     *              1             0             1 
     27 doTrick[VUKMAN,Backflip]
@@ -212,7 +110,7 @@ Objective:  Points = 578 (MAXimum)
     28 doTrick[VUKMAN,Frontflip]
                     *              1             0             1 
     29 doTrick[VUKMAN,SevenTwenty]
-                    *              1             0             1 
+                    *              0             0             1 
     30 doTrick[VUKMAN,FiveFourty]
                     *              1             0             1 
 
