@@ -11,7 +11,6 @@ param injury_treshold{Riders} >=0;
 
 var doTrick{Riders, Tricks} binary;
 
-
 s.t. OnlyDoIfCan{r in Riders, t in Tricks: canDo[r, t] <> 1}:
     doTrick[r, t] = 0;
 
@@ -32,6 +31,14 @@ solve;
 
 printf "Osszpontszam: %d \n", Points;
 
+for {r in Riders} {
+
+    printf "%s \n", r;
+    for{t in Tricks: doTrick[r, t]}{
+        printf "  -> %s \n", t;
+    }
+   
+}
 
 
 end;

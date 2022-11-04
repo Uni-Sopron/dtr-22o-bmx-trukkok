@@ -17,9 +17,9 @@ VUKMAN	    1	            1	        1	    1	        1           1	    0	         
 
 param chance_of_injury :
      	    Tailwhip	Barspin	Threesixty	Invert	Backflip	Frontflip	Flair	SevenTwenty	FiveFourty	Footjam :=
-KEMPF	    0	            14	        11	    9	        0	        19	    0	            30	    32	    9
-KONRAD	    12	            0	        0	    0	        13           0	    26	            0	    0	    0
-VUKMAN	    23	            20	        32	    7	        116          24	    0	            45	    35	    0
+KEMPF	    100	            14	        11	    9	        0	       	 19	    100	            30	    32	    9
+KONRAD	    12	            100	        100	    100	        13           100	 26	            100	    100	    100
+VUKMAN	    23	            20	        32	    7	        116          24	    100	            45	    35	    100
 ;
 
 param value :=

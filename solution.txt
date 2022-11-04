@@ -1,7 +1,7 @@
 Problem:    bmx
 Rows:       22
 Columns:    30 (30 integer, 30 binary)
-Non-zeros:  120
+Non-zeros:  131
 Status:     INTEGER OPTIMAL
 Objective:  Points = 483 (MAXimum)
 
@@ -31,11 +31,11 @@ Objective:  Points = 483 (MAXimum)
                                    0            -0             = 
     12 OnlyDoIfCan[VUKMAN,Footjam]
                                    0            -0             = 
-    13 AtLeastOnce[KEMPF]
+    13 AllTricksAtLeastOnce[KEMPF]
                                    5             1               
-    14 AtLeastOnce[KONRAD]
+    14 AllTricksAtLeastOnce[KONRAD]
                                    3             1               
-    15 AtLeastOnce[VUKMAN]
+    15 AllTricksAtLeastOnce[VUKMAN]
                                    4             1               
     16 TimeConstraint[KEMPF]
                                 2.25                           3 

@@ -1,0 +1,16 @@
+Osszpontszam: 483 
+KEMPF 
+  -> Invert -> 
+  -> Frontflip -> 
+  -> SevenTwenty -> 
+  -> FiveFourty -> 
+  -> Footjam -> 
+KONRAD 
+  -> Tailwhip -> 
+  -> Backflip -> 
+  -> Flair -> 
+VUKMAN 
+  -> Tailwhip -> 
+  -> Invert -> 
+  -> Frontflip -> 
+  -> FiveFourty -> 
