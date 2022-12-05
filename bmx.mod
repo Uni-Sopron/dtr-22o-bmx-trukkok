@@ -1,17 +1,29 @@
 set Tricks;
 set Elements;
-param value{Tricks, Elements};
-param execution_time{Tricks, Elements};
-param chance_of_injury{Tricks,Elements};
-param time_of_a_round >=0;
-param treshold >=0;
+param Value{Tricks, Elements};
+param ExecutionTime{Tricks, Elements};
+param ChanceOfInjury{Tricks,Elements};
+param TimeOfRound >=0;
+param Treshold >=0;
 
-var do{Tricks, Elements} binary;
+var Do{Tricks, Elements} binary;
 
 s.t. TimeConstraint{e in Elements}:
-    sum{t in Tricks} do[t, e] * execution_time[t, e] <= time_of_a_round;
+    sum{t in Tricks} Do[t, e] * ExecutionTime[t, e] <= TimeOfRound;
 
 s.t. InjuryConstraint {e in Elements}:
-    sum{t in Tricks} do[t, e] * chance_of_injury[t, e] <= treshold;
+    sum{t in Tricks} Do[t, e] * ChanceOfInjury[t, e] <= Treshold;
 
-maximize Points: sum{t in Tricks, e in Elements} do[t,e] * value[t,e];
+maximize Points: sum{t in Tricks, e in Elements} Do[t,e] * Value[t,e];
+
+solve;
+
+printf 'Osszpontszam: %d \n', Points;
+printf '---------------\n';
+printf '|Elem | Trukk | \n';
+printf '---------------\n';
+for {t in Tricks, e in Elements: Do[t, e]} {
+    printf '%s - %s \n',e,t;
+}
+
+end;

@@ -3,349 +3,349 @@ Rows:       29
 Columns:    140 (140 integer, 140 binary)
 Non-zeros:  386
 Status:     INTEGER OPTIMAL
-Objective:  Points = 6163 (MAXimum)
+Objective:  Points = 6644 (MAXimum)
 
    No.   Row name        Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
      1 TimeConstraint[Spine]
-                                   2                           2 
+                                   3                           3 
      2 TimeConstraint[Bank]
-                                 1.9                           2 
+                                 2.8                           3 
      3 TimeConstraint[Quarter]
-                                 1.7                           2 
+                                 2.2                           3 
      4 TimeConstraint[Funbox]
-                                   2                           2 
+                                 2.7                           3 
      5 TimeConstraint[Grindbox]
-                                 1.8                           2 
+                                 2.8                           3 
      6 TimeConstraint[Rail]
-                                   2                           2 
+                                 2.3                           3 
      7 TimeConstraint[Halfpipe]
-                                 1.9                           2 
+                                 2.3                           3 
      8 TimeConstraint[Ramp]
-                                 1.9                           2 
+                                 1.9                           3 
      9 TimeConstraint[WallRide]
-                                   2                           2 
+                                 2.6                           3 
     10 TimeConstraint[Bowl]
-                                   2                           2 
+                                 2.6                           3 
     11 TimeConstraint[Volcano]
-                                 1.9                           2 
+                                 1.9                           3 
     12 TimeConstraint[Pool]
-                                 1.8                           2 
+                                 2.1                           3 
     13 TimeConstraint[Hubba]
-                                 1.6                           2 
+                                 2.1                           3 
     14 TimeConstraint[Pyramid]
-                                   2                           2 
+                                 2.5                           3 
     15 InjuryConstraint[Spine]
-                                0.38                         100 
+                                0.51                         100 
     16 InjuryConstraint[Bank]
-                                 0.3                         100 
+                                0.34                         100 
     17 InjuryConstraint[Quarter]
-                                0.17                         100 
+                                0.23                         100 
     18 InjuryConstraint[Funbox]
-                                0.21                         100 
+                                0.37                         100 
     19 InjuryConstraint[Grindbox]
-                                0.19                         100 
+                                 0.3                         100 
     20 InjuryConstraint[Rail]
-                                0.27                         100 
+                                0.31                         100 
     21 InjuryConstraint[Halfpipe]
-                                0.19                         100 
+                                0.23                         100 
     22 InjuryConstraint[Ramp]
                                 0.28                         100 
     23 InjuryConstraint[WallRide]
-                                0.31                         100 
+                                0.32                         100 
     24 InjuryConstraint[Bowl]
-                                0.19                         100 
+                                0.28                         100 
     25 InjuryConstraint[Volcano]
                                 0.34                         100 
     26 InjuryConstraint[Pool]
-                                0.22                         100 
+                                0.24                         100 
     27 InjuryConstraint[Hubba]
-                                0.31                         100 
+                                0.34                         100 
     28 InjuryConstraint[Pyramid]
-                                0.29                         100 
-    29 Points                   6163                             
+                                0.38                         100 
+    29 Points                   6644                             
 
    No. Column name       Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
-     1 do[Tailwhip,Spine]
+     1 Do[Tailwhip,Spine]
                     *              1             0             1 
-     2 do[Barspin,Spine]
+     2 Do[Barspin,Spine]
+                    *              1             0             1 
+     3 Do[Threesixty,Spine]
                     *              0             0             1 
-     3 do[Threesixty,Spine]
+     4 Do[Tabletop,Spine]
                     *              0             0             1 
-     4 do[Tabletop,Spine]
+     5 Do[Invert,Spine]
                     *              0             0             1 
-     5 do[Invert,Spine]
+     6 Do[Backflip,Spine]
+                    *              1             0             1 
+     7 Do[Flair,Spine]
+                    *              1             0             1 
+     8 Do[Frontflip,Spine]
+                    *              1             0             1 
+     9 Do[Double_Tailwhip,Spine]
                     *              0             0             1 
-     6 do[Backflip,Spine]
+    10 Do[Aerial_Tailwhip,Spine]
                     *              1             0             1 
-     7 do[Flair,Spine]
+    11 Do[Tailwhip,Bank]
+                    *              1             0             1 
+    12 Do[Barspin,Bank]
+                    *              1             0             1 
+    13 Do[Threesixty,Bank]
                     *              0             0             1 
-     8 do[Frontflip,Spine]
-                    *              1             0             1 
-     9 do[Double_Tailwhip,Spine]
+    14 Do[Tabletop,Bank]
                     *              0             0             1 
-    10 do[Aerial_Tailwhip,Spine]
+    15 Do[Invert,Bank]
+                    *              1             0             1 
+    16 Do[Backflip,Bank]
+                    *              1             0             1 
+    17 Do[Flair,Bank]
+                    *              1             0             1 
+    18 Do[Frontflip,Bank]
+                    *              1             0             1 
+    19 Do[Double_Tailwhip,Bank]
+                    *              1             0             1 
+    20 Do[Aerial_Tailwhip,Bank]
+                    *              1             0             1 
+    21 Do[Tailwhip,Quarter]
+                    *              1             0             1 
+    22 Do[Barspin,Quarter]
+                    *              1             0             1 
+    23 Do[Threesixty,Quarter]
+                    *              1             0             1 
+    24 Do[Tabletop,Quarter]
+                    *              1             0             1 
+    25 Do[Invert,Quarter]
+                    *              1             0             1 
+    26 Do[Backflip,Quarter]
+                    *              1             0             1 
+    27 Do[Flair,Quarter]
+                    *              1             0             1 
+    28 Do[Frontflip,Quarter]
+                    *              1             0             1 
+    29 Do[Double_Tailwhip,Quarter]
+                    *              1             0             1 
+    30 Do[Aerial_Tailwhip,Quarter]
+                    *              1             0             1 
+    31 Do[Tailwhip,Funbox]
+                    *              1             0             1 
+    32 Do[Barspin,Funbox]
+                    *              1             0             1 
+    33 Do[Threesixty,Funbox]
+                    *              1             0             1 
+    34 Do[Tabletop,Funbox]
+                    *              1             0             1 
+    35 Do[Invert,Funbox]
+                    *              1             0             1 
+    36 Do[Backflip,Funbox]
+                    *              1             0             1 
+    37 Do[Flair,Funbox]
+                    *              1             0             1 
+    38 Do[Frontflip,Funbox]
+                    *              1             0             1 
+    39 Do[Double_Tailwhip,Funbox]
+                    *              1             0             1 
+    40 Do[Aerial_Tailwhip,Funbox]
+                    *              1             0             1 
+    41 Do[Tailwhip,Grindbox]
+                    *              1             0             1 
+    42 Do[Barspin,Grindbox]
+                    *              1             0             1 
+    43 Do[Threesixty,Grindbox]
+                    *              1             0             1 
+    44 Do[Tabletop,Grindbox]
+                    *              1             0             1 
+    45 Do[Invert,Grindbox]
+                    *              1             0             1 
+    46 Do[Backflip,Grindbox]
+                    *              1             0             1 
+    47 Do[Flair,Grindbox]
                     *              0             0             1 
-    11 do[Tailwhip,Bank]
+    48 Do[Frontflip,Grindbox]
                     *              1             0             1 
-    12 do[Barspin,Bank]
+    49 Do[Double_Tailwhip,Grindbox]
                     *              1             0             1 
-    13 do[Threesixty,Bank]
-                    *              0             0             1 
-    14 do[Tabletop,Bank]
-                    *              0             0             1 
-    15 do[Invert,Bank]
-                    *              0             0             1 
-    16 do[Backflip,Bank]
-                    *              0             0             1 
-    17 do[Flair,Bank]
+    50 Do[Aerial_Tailwhip,Grindbox]
                     *              1             0             1 
-    18 do[Frontflip,Bank]
+    51 Do[Tailwhip,Rail]
                     *              1             0             1 
-    19 do[Double_Tailwhip,Bank]
+    52 Do[Barspin,Rail]
                     *              1             0             1 
-    20 do[Aerial_Tailwhip,Bank]
+    53 Do[Threesixty,Rail]
                     *              1             0             1 
-    21 do[Tailwhip,Quarter]
+    54 Do[Tabletop,Rail]
                     *              1             0             1 
-    22 do[Barspin,Quarter]
+    55 Do[Invert,Rail]
                     *              1             0             1 
-    23 do[Threesixty,Quarter]
+    56 Do[Backflip,Rail]
                     *              1             0             1 
-    24 do[Tabletop,Quarter]
+    57 Do[Flair,Rail]
                     *              1             0             1 
-    25 do[Invert,Quarter]
+    58 Do[Frontflip,Rail]
                     *              1             0             1 
-    26 do[Backflip,Quarter]
+    59 Do[Double_Tailwhip,Rail]
                     *              1             0             1 
-    27 do[Flair,Quarter]
+    60 Do[Aerial_Tailwhip,Rail]
                     *              1             0             1 
-    28 do[Frontflip,Quarter]
-                    *              0             0             1 
-    29 do[Double_Tailwhip,Quarter]
+    61 Do[Tailwhip,Halfpipe]
                     *              1             0             1 
-    30 do[Aerial_Tailwhip,Quarter]
+    62 Do[Barspin,Halfpipe]
                     *              1             0             1 
-    31 do[Tailwhip,Funbox]
+    63 Do[Threesixty,Halfpipe]
                     *              1             0             1 
-    32 do[Barspin,Funbox]
-                    *              0             0             1 
-    33 do[Threesixty,Funbox]
+    64 Do[Tabletop,Halfpipe]
                     *              1             0             1 
-    34 do[Tabletop,Funbox]
-                    *              0             0             1 
-    35 do[Invert,Funbox]
-                    *              0             0             1 
-    36 do[Backflip,Funbox]
+    65 Do[Invert,Halfpipe]
                     *              1             0             1 
-    37 do[Flair,Funbox]
+    66 Do[Backflip,Halfpipe]
                     *              1             0             1 
-    38 do[Frontflip,Funbox]
+    67 Do[Flair,Halfpipe]
                     *              1             0             1 
-    39 do[Double_Tailwhip,Funbox]
+    68 Do[Frontflip,Halfpipe]
                     *              1             0             1 
-    40 do[Aerial_Tailwhip,Funbox]
+    69 Do[Double_Tailwhip,Halfpipe]
                     *              1             0             1 
-    41 do[Tailwhip,Grindbox]
-                    *              0             0             1 
-    42 do[Barspin,Grindbox]
+    70 Do[Aerial_Tailwhip,Halfpipe]
                     *              1             0             1 
-    43 do[Threesixty,Grindbox]
+    71 Do[Tailwhip,Ramp]
                     *              1             0             1 
-    44 do[Tabletop,Grindbox]
+    72 Do[Barspin,Ramp]
                     *              1             0             1 
-    45 do[Invert,Grindbox]
+    73 Do[Threesixty,Ramp]
                     *              1             0             1 
-    46 do[Backflip,Grindbox]
+    74 Do[Tabletop,Ramp]
                     *              1             0             1 
-    47 do[Flair,Grindbox]
-                    *              0             0             1 
-    48 do[Frontflip,Grindbox]
-                    *              0             0             1 
-    49 do[Double_Tailwhip,Grindbox]
+    75 Do[Invert,Ramp]
                     *              1             0             1 
-    50 do[Aerial_Tailwhip,Grindbox]
+    76 Do[Backflip,Ramp]
                     *              1             0             1 
-    51 do[Tailwhip,Rail]
+    77 Do[Flair,Ramp]
                     *              1             0             1 
-    52 do[Barspin,Rail]
-                    *              0             0             1 
-    53 do[Threesixty,Rail]
+    78 Do[Frontflip,Ramp]
                     *              1             0             1 
-    54 do[Tabletop,Rail]
+    79 Do[Double_Tailwhip,Ramp]
                     *              1             0             1 
-    55 do[Invert,Rail]
+    80 Do[Aerial_Tailwhip,Ramp]
                     *              1             0             1 
-    56 do[Backflip,Rail]
+    81 Do[Tailwhip,WallRide]
                     *              1             0             1 
-    57 do[Flair,Rail]
+    82 Do[Barspin,WallRide]
                     *              1             0             1 
-    58 do[Frontflip,Rail]
+    83 Do[Threesixty,WallRide]
                     *              1             0             1 
-    59 do[Double_Tailwhip,Rail]
+    84 Do[Tabletop,WallRide]
                     *              1             0             1 
-    60 do[Aerial_Tailwhip,Rail]
+    85 Do[Invert,WallRide]
                     *              1             0             1 
-    61 do[Tailwhip,Halfpipe]
+    86 Do[Backflip,WallRide]
                     *              1             0             1 
-    62 do[Barspin,Halfpipe]
+    87 Do[Flair,WallRide]
                     *              1             0             1 
-    63 do[Threesixty,Halfpipe]
+    88 Do[Frontflip,WallRide]
                     *              1             0             1 
-    64 do[Tabletop,Halfpipe]
+    89 Do[Double_Tailwhip,WallRide]
                     *              1             0             1 
-    65 do[Invert,Halfpipe]
+    90 Do[Aerial_Tailwhip,WallRide]
                     *              1             0             1 
-    66 do[Backflip,Halfpipe]
-                    *              0             0             1 
-    67 do[Flair,Halfpipe]
+    91 Do[Tailwhip,Bowl]
                     *              1             0             1 
-    68 do[Frontflip,Halfpipe]
+    92 Do[Barspin,Bowl]
                     *              1             0             1 
-    69 do[Double_Tailwhip,Halfpipe]
+    93 Do[Threesixty,Bowl]
                     *              1             0             1 
-    70 do[Aerial_Tailwhip,Halfpipe]
+    94 Do[Tabletop,Bowl]
                     *              1             0             1 
-    71 do[Tailwhip,Ramp]
+    95 Do[Invert,Bowl]
                     *              1             0             1 
-    72 do[Barspin,Ramp]
+    96 Do[Backflip,Bowl]
                     *              1             0             1 
-    73 do[Threesixty,Ramp]
+    97 Do[Flair,Bowl]
                     *              1             0             1 
-    74 do[Tabletop,Ramp]
+    98 Do[Frontflip,Bowl]
                     *              1             0             1 
-    75 do[Invert,Ramp]
+    99 Do[Double_Tailwhip,Bowl]
                     *              1             0             1 
-    76 do[Backflip,Ramp]
+   100 Do[Aerial_Tailwhip,Bowl]
                     *              1             0             1 
-    77 do[Flair,Ramp]
+   101 Do[Tailwhip,Volcano]
                     *              1             0             1 
-    78 do[Frontflip,Ramp]
+   102 Do[Barspin,Volcano]
                     *              1             0             1 
-    79 do[Double_Tailwhip,Ramp]
+   103 Do[Threesixty,Volcano]
                     *              1             0             1 
-    80 do[Aerial_Tailwhip,Ramp]
+   104 Do[Tabletop,Volcano]
                     *              1             0             1 
-    81 do[Tailwhip,WallRide]
+   105 Do[Invert,Volcano]
                     *              1             0             1 
-    82 do[Barspin,WallRide]
+   106 Do[Backflip,Volcano]
                     *              1             0             1 
-    83 do[Threesixty,WallRide]
+   107 Do[Flair,Volcano]
                     *              1             0             1 
-    84 do[Tabletop,WallRide]
+   108 Do[Frontflip,Volcano]
                     *              1             0             1 
-    85 do[Invert,WallRide]
-                    *              0             0             1 
-    86 do[Backflip,WallRide]
+   109 Do[Double_Tailwhip,Volcano]
                     *              1             0             1 
-    87 do[Flair,WallRide]
+   110 Do[Aerial_Tailwhip,Volcano]
                     *              1             0             1 
-    88 do[Frontflip,WallRide]
+   111 Do[Tailwhip,Pool]
                     *              1             0             1 
-    89 do[Double_Tailwhip,WallRide]
+   112 Do[Barspin,Pool]
                     *              1             0             1 
-    90 do[Aerial_Tailwhip,WallRide]
-                    *              0             0             1 
-    91 do[Tailwhip,Bowl]
-                    *              0             0             1 
-    92 do[Barspin,Bowl]
+   113 Do[Threesixty,Pool]
                     *              1             0             1 
-    93 do[Threesixty,Bowl]
+   114 Do[Tabletop,Pool]
                     *              1             0             1 
-    94 do[Tabletop,Bowl]
-                    *              0             0             1 
-    95 do[Invert,Bowl]
+   115 Do[Invert,Pool]
                     *              1             0             1 
-    96 do[Backflip,Bowl]
+   116 Do[Backflip,Pool]
                     *              1             0             1 
-    97 do[Flair,Bowl]
+   117 Do[Flair,Pool]
                     *              1             0             1 
-    98 do[Frontflip,Bowl]
+   118 Do[Frontflip,Pool]
                     *              1             0             1 
-    99 do[Double_Tailwhip,Bowl]
+   119 Do[Double_Tailwhip,Pool]
                     *              1             0             1 
-   100 do[Aerial_Tailwhip,Bowl]
+   120 Do[Aerial_Tailwhip,Pool]
                     *              1             0             1 
-   101 do[Tailwhip,Volcano]
+   121 Do[Tailwhip,Hubba]
                     *              1             0             1 
-   102 do[Barspin,Volcano]
+   122 Do[Barspin,Hubba]
                     *              1             0             1 
-   103 do[Threesixty,Volcano]
+   123 Do[Threesixty,Hubba]
                     *              1             0             1 
-   104 do[Tabletop,Volcano]
+   124 Do[Tabletop,Hubba]
                     *              1             0             1 
-   105 do[Invert,Volcano]
+   125 Do[Invert,Hubba]
                     *              1             0             1 
-   106 do[Backflip,Volcano]
+   126 Do[Backflip,Hubba]
                     *              1             0             1 
-   107 do[Flair,Volcano]
+   127 Do[Flair,Hubba]
                     *              1             0             1 
-   108 do[Frontflip,Volcano]
+   128 Do[Frontflip,Hubba]
                     *              1             0             1 
-   109 do[Double_Tailwhip,Volcano]
+   129 Do[Double_Tailwhip,Hubba]
                     *              1             0             1 
-   110 do[Aerial_Tailwhip,Volcano]
+   130 Do[Aerial_Tailwhip,Hubba]
                     *              1             0             1 
-   111 do[Tailwhip,Pool]
+   131 Do[Tailwhip,Pyramid]
                     *              1             0             1 
-   112 do[Barspin,Pool]
+   132 Do[Barspin,Pyramid]
                     *              1             0             1 
-   113 do[Threesixty,Pool]
-                    *              0             0             1 
-   114 do[Tabletop,Pool]
+   133 Do[Threesixty,Pyramid]
                     *              1             0             1 
-   115 do[Invert,Pool]
+   134 Do[Tabletop,Pyramid]
                     *              1             0             1 
-   116 do[Backflip,Pool]
+   135 Do[Invert,Pyramid]
                     *              1             0             1 
-   117 do[Flair,Pool]
+   136 Do[Backflip,Pyramid]
                     *              1             0             1 
-   118 do[Frontflip,Pool]
+   137 Do[Flair,Pyramid]
                     *              1             0             1 
-   119 do[Double_Tailwhip,Pool]
+   138 Do[Frontflip,Pyramid]
                     *              1             0             1 
-   120 do[Aerial_Tailwhip,Pool]
+   139 Do[Double_Tailwhip,Pyramid]
                     *              1             0             1 
-   121 do[Tailwhip,Hubba]
-                    *              1             0             1 
-   122 do[Barspin,Hubba]
-                    *              1             0             1 
-   123 do[Threesixty,Hubba]
-                    *              1             0             1 
-   124 do[Tabletop,Hubba]
-                    *              1             0             1 
-   125 do[Invert,Hubba]
-                    *              0             0             1 
-   126 do[Backflip,Hubba]
-                    *              1             0             1 
-   127 do[Flair,Hubba]
-                    *              1             0             1 
-   128 do[Frontflip,Hubba]
-                    *              1             0             1 
-   129 do[Double_Tailwhip,Hubba]
-                    *              1             0             1 
-   130 do[Aerial_Tailwhip,Hubba]
-                    *              1             0             1 
-   131 do[Tailwhip,Pyramid]
-                    *              1             0             1 
-   132 do[Barspin,Pyramid]
-                    *              1             0             1 
-   133 do[Threesixty,Pyramid]
-                    *              1             0             1 
-   134 do[Tabletop,Pyramid]
-                    *              1             0             1 
-   135 do[Invert,Pyramid]
-                    *              1             0             1 
-   136 do[Backflip,Pyramid]
-                    *              0             0             1 
-   137 do[Flair,Pyramid]
-                    *              1             0             1 
-   138 do[Frontflip,Pyramid]
-                    *              0             0             1 
-   139 do[Double_Tailwhip,Pyramid]
-                    *              1             0             1 
-   140 do[Aerial_Tailwhip,Pyramid]
+   140 Do[Aerial_Tailwhip,Pyramid]
                     *              1             0             1 
 
 Integer feasibility conditions:
