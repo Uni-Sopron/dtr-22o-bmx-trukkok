@@ -1,117 +1,351 @@
 Problem:    bmx
-Rows:       22
-Columns:    30 (30 integer, 30 binary)
-Non-zeros:  131
+Rows:       29
+Columns:    140 (140 integer, 140 binary)
+Non-zeros:  386
 Status:     INTEGER OPTIMAL
-Objective:  Points = 483 (MAXimum)
+Objective:  Points = 6163 (MAXimum)
 
    No.   Row name        Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
-     1 OnlyDoIfCan[KEMPF,Tailwhip]
-                                   0            -0             = 
-     2 OnlyDoIfCan[KEMPF,Backflip]
-                                   0            -0             = 
-     3 OnlyDoIfCan[KEMPF,Flair]
-                                   0            -0             = 
-     4 OnlyDoIfCan[KONRAD,Barspin]
-                                   0            -0             = 
-     5 OnlyDoIfCan[KONRAD,Threesixty]
-                                   0            -0             = 
-     6 OnlyDoIfCan[KONRAD,Invert]
-                                   0            -0             = 
-     7 OnlyDoIfCan[KONRAD,Frontflip]
-                                   0            -0             = 
-     8 OnlyDoIfCan[KONRAD,SevenTwenty]
-                                   0            -0             = 
-     9 OnlyDoIfCan[KONRAD,FiveFourty]
-                                   0            -0             = 
-    10 OnlyDoIfCan[KONRAD,Footjam]
-                                   0            -0             = 
-    11 OnlyDoIfCan[VUKMAN,Flair]
-                                   0            -0             = 
-    12 OnlyDoIfCan[VUKMAN,Footjam]
-                                   0            -0             = 
-    13 AllTricksAtLeastOnce[KEMPF]
-                                   5             1               
-    14 AllTricksAtLeastOnce[KONRAD]
-                                   3             1               
-    15 AllTricksAtLeastOnce[VUKMAN]
-                                   4             1               
-    16 TimeConstraint[KEMPF]
-                                2.25                           3 
-    17 TimeConstraint[KONRAD]
-                                 1.7                           3 
-    18 TimeConstraint[VUKMAN]
-                                 2.3                           3 
-    19 InjuryConstraint[KEMPF]
-                                  99                         100 
-    20 InjuryConstraint[KONRAD]
-                                  51                          80 
-    21 InjuryConstraint[VUKMAN]
-                                  89                          90 
-    22 Points                    483                             
+     1 TimeConstraint[Spine]
+                                   2                           2 
+     2 TimeConstraint[Bank]
+                                 1.9                           2 
+     3 TimeConstraint[Quarter]
+                                 1.7                           2 
+     4 TimeConstraint[Funbox]
+                                   2                           2 
+     5 TimeConstraint[Grindbox]
+                                 1.8                           2 
+     6 TimeConstraint[Rail]
+                                   2                           2 
+     7 TimeConstraint[Halfpipe]
+                                 1.9                           2 
+     8 TimeConstraint[Ramp]
+                                 1.9                           2 
+     9 TimeConstraint[WallRide]
+                                   2                           2 
+    10 TimeConstraint[Bowl]
+                                   2                           2 
+    11 TimeConstraint[Volcano]
+                                 1.9                           2 
+    12 TimeConstraint[Pool]
+                                 1.8                           2 
+    13 TimeConstraint[Hubba]
+                                 1.6                           2 
+    14 TimeConstraint[Pyramid]
+                                   2                           2 
+    15 InjuryConstraint[Spine]
+                                0.38                         100 
+    16 InjuryConstraint[Bank]
+                                 0.3                         100 
+    17 InjuryConstraint[Quarter]
+                                0.17                         100 
+    18 InjuryConstraint[Funbox]
+                                0.21                         100 
+    19 InjuryConstraint[Grindbox]
+                                0.19                         100 
+    20 InjuryConstraint[Rail]
+                                0.27                         100 
+    21 InjuryConstraint[Halfpipe]
+                                0.19                         100 
+    22 InjuryConstraint[Ramp]
+                                0.28                         100 
+    23 InjuryConstraint[WallRide]
+                                0.31                         100 
+    24 InjuryConstraint[Bowl]
+                                0.19                         100 
+    25 InjuryConstraint[Volcano]
+                                0.34                         100 
+    26 InjuryConstraint[Pool]
+                                0.22                         100 
+    27 InjuryConstraint[Hubba]
+                                0.31                         100 
+    28 InjuryConstraint[Pyramid]
+                                0.29                         100 
+    29 Points                   6163                             
 
    No. Column name       Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
-     1 doTrick[KEMPF,Tailwhip]
-                    *              0             0             1 
-     2 doTrick[KEMPF,Backflip]
-                    *              0             0             1 
-     3 doTrick[KEMPF,Flair]
-                    *              0             0             1 
-     4 doTrick[KONRAD,Barspin]
-                    *              0             0             1 
-     5 doTrick[KONRAD,Threesixty]
-                    *              0             0             1 
-     6 doTrick[KONRAD,Invert]
-                    *              0             0             1 
-     7 doTrick[KONRAD,Frontflip]
-                    *              0             0             1 
-     8 doTrick[KONRAD,SevenTwenty]
-                    *              0             0             1 
-     9 doTrick[KONRAD,FiveFourty]
-                    *              0             0             1 
-    10 doTrick[KONRAD,Footjam]
-                    *              0             0             1 
-    11 doTrick[VUKMAN,Flair]
-                    *              0             0             1 
-    12 doTrick[VUKMAN,Footjam]
-                    *              0             0             1 
-    13 doTrick[KEMPF,Barspin]
-                    *              0             0             1 
-    14 doTrick[KEMPF,Threesixty]
-                    *              0             0             1 
-    15 doTrick[KEMPF,Invert]
+     1 do[Tailwhip,Spine]
                     *              1             0             1 
-    16 doTrick[KEMPF,Frontflip]
-                    *              1             0             1 
-    17 doTrick[KEMPF,SevenTwenty]
-                    *              1             0             1 
-    18 doTrick[KEMPF,FiveFourty]
-                    *              1             0             1 
-    19 doTrick[KEMPF,Footjam]
-                    *              1             0             1 
-    20 doTrick[KONRAD,Tailwhip]
-                    *              1             0             1 
-    21 doTrick[KONRAD,Backflip]
-                    *              1             0             1 
-    22 doTrick[KONRAD,Flair]
-                    *              1             0             1 
-    23 doTrick[VUKMAN,Tailwhip]
-                    *              1             0             1 
-    24 doTrick[VUKMAN,Barspin]
+     2 do[Barspin,Spine]
                     *              0             0             1 
-    25 doTrick[VUKMAN,Threesixty]
+     3 do[Threesixty,Spine]
                     *              0             0             1 
-    26 doTrick[VUKMAN,Invert]
+     4 do[Tabletop,Spine]
+                    *              0             0             1 
+     5 do[Invert,Spine]
+                    *              0             0             1 
+     6 do[Backflip,Spine]
                     *              1             0             1 
-    27 doTrick[VUKMAN,Backflip]
+     7 do[Flair,Spine]
                     *              0             0             1 
-    28 doTrick[VUKMAN,Frontflip]
+     8 do[Frontflip,Spine]
                     *              1             0             1 
-    29 doTrick[VUKMAN,SevenTwenty]
+     9 do[Double_Tailwhip,Spine]
                     *              0             0             1 
-    30 doTrick[VUKMAN,FiveFourty]
+    10 do[Aerial_Tailwhip,Spine]
+                    *              0             0             1 
+    11 do[Tailwhip,Bank]
+                    *              1             0             1 
+    12 do[Barspin,Bank]
+                    *              1             0             1 
+    13 do[Threesixty,Bank]
+                    *              0             0             1 
+    14 do[Tabletop,Bank]
+                    *              0             0             1 
+    15 do[Invert,Bank]
+                    *              0             0             1 
+    16 do[Backflip,Bank]
+                    *              0             0             1 
+    17 do[Flair,Bank]
+                    *              1             0             1 
+    18 do[Frontflip,Bank]
+                    *              1             0             1 
+    19 do[Double_Tailwhip,Bank]
+                    *              1             0             1 
+    20 do[Aerial_Tailwhip,Bank]
+                    *              1             0             1 
+    21 do[Tailwhip,Quarter]
+                    *              1             0             1 
+    22 do[Barspin,Quarter]
+                    *              1             0             1 
+    23 do[Threesixty,Quarter]
+                    *              1             0             1 
+    24 do[Tabletop,Quarter]
+                    *              1             0             1 
+    25 do[Invert,Quarter]
+                    *              1             0             1 
+    26 do[Backflip,Quarter]
+                    *              1             0             1 
+    27 do[Flair,Quarter]
+                    *              1             0             1 
+    28 do[Frontflip,Quarter]
+                    *              0             0             1 
+    29 do[Double_Tailwhip,Quarter]
+                    *              1             0             1 
+    30 do[Aerial_Tailwhip,Quarter]
+                    *              1             0             1 
+    31 do[Tailwhip,Funbox]
+                    *              1             0             1 
+    32 do[Barspin,Funbox]
+                    *              0             0             1 
+    33 do[Threesixty,Funbox]
+                    *              1             0             1 
+    34 do[Tabletop,Funbox]
+                    *              0             0             1 
+    35 do[Invert,Funbox]
+                    *              0             0             1 
+    36 do[Backflip,Funbox]
+                    *              1             0             1 
+    37 do[Flair,Funbox]
+                    *              1             0             1 
+    38 do[Frontflip,Funbox]
+                    *              1             0             1 
+    39 do[Double_Tailwhip,Funbox]
+                    *              1             0             1 
+    40 do[Aerial_Tailwhip,Funbox]
+                    *              1             0             1 
+    41 do[Tailwhip,Grindbox]
+                    *              0             0             1 
+    42 do[Barspin,Grindbox]
+                    *              1             0             1 
+    43 do[Threesixty,Grindbox]
+                    *              1             0             1 
+    44 do[Tabletop,Grindbox]
+                    *              1             0             1 
+    45 do[Invert,Grindbox]
+                    *              1             0             1 
+    46 do[Backflip,Grindbox]
+                    *              1             0             1 
+    47 do[Flair,Grindbox]
+                    *              0             0             1 
+    48 do[Frontflip,Grindbox]
+                    *              0             0             1 
+    49 do[Double_Tailwhip,Grindbox]
+                    *              1             0             1 
+    50 do[Aerial_Tailwhip,Grindbox]
+                    *              1             0             1 
+    51 do[Tailwhip,Rail]
+                    *              1             0             1 
+    52 do[Barspin,Rail]
+                    *              0             0             1 
+    53 do[Threesixty,Rail]
+                    *              1             0             1 
+    54 do[Tabletop,Rail]
+                    *              1             0             1 
+    55 do[Invert,Rail]
+                    *              1             0             1 
+    56 do[Backflip,Rail]
+                    *              1             0             1 
+    57 do[Flair,Rail]
+                    *              1             0             1 
+    58 do[Frontflip,Rail]
+                    *              1             0             1 
+    59 do[Double_Tailwhip,Rail]
+                    *              1             0             1 
+    60 do[Aerial_Tailwhip,Rail]
+                    *              1             0             1 
+    61 do[Tailwhip,Halfpipe]
+                    *              1             0             1 
+    62 do[Barspin,Halfpipe]
+                    *              1             0             1 
+    63 do[Threesixty,Halfpipe]
+                    *              1             0             1 
+    64 do[Tabletop,Halfpipe]
+                    *              1             0             1 
+    65 do[Invert,Halfpipe]
+                    *              1             0             1 
+    66 do[Backflip,Halfpipe]
+                    *              0             0             1 
+    67 do[Flair,Halfpipe]
+                    *              1             0             1 
+    68 do[Frontflip,Halfpipe]
+                    *              1             0             1 
+    69 do[Double_Tailwhip,Halfpipe]
+                    *              1             0             1 
+    70 do[Aerial_Tailwhip,Halfpipe]
+                    *              1             0             1 
+    71 do[Tailwhip,Ramp]
+                    *              1             0             1 
+    72 do[Barspin,Ramp]
+                    *              1             0             1 
+    73 do[Threesixty,Ramp]
+                    *              1             0             1 
+    74 do[Tabletop,Ramp]
+                    *              1             0             1 
+    75 do[Invert,Ramp]
+                    *              1             0             1 
+    76 do[Backflip,Ramp]
+                    *              1             0             1 
+    77 do[Flair,Ramp]
+                    *              1             0             1 
+    78 do[Frontflip,Ramp]
+                    *              1             0             1 
+    79 do[Double_Tailwhip,Ramp]
+                    *              1             0             1 
+    80 do[Aerial_Tailwhip,Ramp]
+                    *              1             0             1 
+    81 do[Tailwhip,WallRide]
+                    *              1             0             1 
+    82 do[Barspin,WallRide]
+                    *              1             0             1 
+    83 do[Threesixty,WallRide]
+                    *              1             0             1 
+    84 do[Tabletop,WallRide]
+                    *              1             0             1 
+    85 do[Invert,WallRide]
+                    *              0             0             1 
+    86 do[Backflip,WallRide]
+                    *              1             0             1 
+    87 do[Flair,WallRide]
+                    *              1             0             1 
+    88 do[Frontflip,WallRide]
+                    *              1             0             1 
+    89 do[Double_Tailwhip,WallRide]
+                    *              1             0             1 
+    90 do[Aerial_Tailwhip,WallRide]
+                    *              0             0             1 
+    91 do[Tailwhip,Bowl]
+                    *              0             0             1 
+    92 do[Barspin,Bowl]
+                    *              1             0             1 
+    93 do[Threesixty,Bowl]
+                    *              1             0             1 
+    94 do[Tabletop,Bowl]
+                    *              0             0             1 
+    95 do[Invert,Bowl]
+                    *              1             0             1 
+    96 do[Backflip,Bowl]
+                    *              1             0             1 
+    97 do[Flair,Bowl]
+                    *              1             0             1 
+    98 do[Frontflip,Bowl]
+                    *              1             0             1 
+    99 do[Double_Tailwhip,Bowl]
+                    *              1             0             1 
+   100 do[Aerial_Tailwhip,Bowl]
+                    *              1             0             1 
+   101 do[Tailwhip,Volcano]
+                    *              1             0             1 
+   102 do[Barspin,Volcano]
+                    *              1             0             1 
+   103 do[Threesixty,Volcano]
+                    *              1             0             1 
+   104 do[Tabletop,Volcano]
+                    *              1             0             1 
+   105 do[Invert,Volcano]
+                    *              1             0             1 
+   106 do[Backflip,Volcano]
+                    *              1             0             1 
+   107 do[Flair,Volcano]
+                    *              1             0             1 
+   108 do[Frontflip,Volcano]
+                    *              1             0             1 
+   109 do[Double_Tailwhip,Volcano]
+                    *              1             0             1 
+   110 do[Aerial_Tailwhip,Volcano]
+                    *              1             0             1 
+   111 do[Tailwhip,Pool]
+                    *              1             0             1 
+   112 do[Barspin,Pool]
+                    *              1             0             1 
+   113 do[Threesixty,Pool]
+                    *              0             0             1 
+   114 do[Tabletop,Pool]
+                    *              1             0             1 
+   115 do[Invert,Pool]
+                    *              1             0             1 
+   116 do[Backflip,Pool]
+                    *              1             0             1 
+   117 do[Flair,Pool]
+                    *              1             0             1 
+   118 do[Frontflip,Pool]
+                    *              1             0             1 
+   119 do[Double_Tailwhip,Pool]
+                    *              1             0             1 
+   120 do[Aerial_Tailwhip,Pool]
+                    *              1             0             1 
+   121 do[Tailwhip,Hubba]
+                    *              1             0             1 
+   122 do[Barspin,Hubba]
+                    *              1             0             1 
+   123 do[Threesixty,Hubba]
+                    *              1             0             1 
+   124 do[Tabletop,Hubba]
+                    *              1             0             1 
+   125 do[Invert,Hubba]
+                    *              0             0             1 
+   126 do[Backflip,Hubba]
+                    *              1             0             1 
+   127 do[Flair,Hubba]
+                    *              1             0             1 
+   128 do[Frontflip,Hubba]
+                    *              1             0             1 
+   129 do[Double_Tailwhip,Hubba]
+                    *              1             0             1 
+   130 do[Aerial_Tailwhip,Hubba]
+                    *              1             0             1 
+   131 do[Tailwhip,Pyramid]
+                    *              1             0             1 
+   132 do[Barspin,Pyramid]
+                    *              1             0             1 
+   133 do[Threesixty,Pyramid]
+                    *              1             0             1 
+   134 do[Tabletop,Pyramid]
+                    *              1             0             1 
+   135 do[Invert,Pyramid]
+                    *              1             0             1 
+   136 do[Backflip,Pyramid]
+                    *              0             0             1 
+   137 do[Flair,Pyramid]
+                    *              1             0             1 
+   138 do[Frontflip,Pyramid]
+                    *              0             0             1 
+   139 do[Double_Tailwhip,Pyramid]
+                    *              1             0             1 
+   140 do[Aerial_Tailwhip,Pyramid]
                     *              1             0             1 
 
 Integer feasibility conditions:

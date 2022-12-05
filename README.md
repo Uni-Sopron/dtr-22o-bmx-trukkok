@@ -1,15 +1,12 @@
-# BMX trükkök (új)
+# BMX trükkök
 
-A feladat egy BMX versenyt modellez. A résztvevő magyar versenyzők pontszámait szeretnénk maximalizálni, hogy országunk a lehető legjobban teljesítsen.
-A megcsinálható trükkök halmaza adott.
-A versenyzőink nem feltétlenül ugyanazokat a trükköket tudják végrehajtani. Némelyik trükköt nehezebb megcsinálni, amit keveset gyakoroltak azt nagyobb sérülési eséllyel tudják megcsinálni. A versenyzők nem sérülhetnek le, mert onnantól nem folytathatják a versenyt. 
-Figyelembe kell venni hogy a trükkök kivitelezésére 3 perc áll rendelkezésre és egyes trükkök végrehajtása több pontot ér mint mások.
-A versenyzőknek az összes trükköt be kell mutatniuk amit begyakoroltak legalább egyszer, kétszer egymás után ugyan azt a trükköt nem csinálhatják meg.
+A feladat egy BMX versenyt modellez. A résztvevő versenyzők 3 körben hajtanak végre különböző trükköket, amelyekért pontok járnak.
+Egyes trükkök több pontot érnek, mint mások. A trükköket többféle elemen lehet kivitelezni, nagyobb elemeken előfordulhat, hogy több időbe kerül megcsinálni egy adott trükköt, viszont ez megint csak több pontot ér. 
+Fontos tudni, hogy minden egyes trükknek, elemnek van egy sérülési esélye, ha egy versenyző túlvállalja magát, bekövetkezhet egy komoly sérülés, ami után nem folytathatja a kört. <br>
+A feladat egy BMX versenyt modellez. Adottak bizonyos trükkök amiket végre tudunk hajtani elemeken. A trükkökért pont jár, azonban egyes trükköket nagyobb sérülési eséllyel és idővel tudunk kivitelezni az elemeken. 
+A szabályok a következők:
+- 3 perc áll a rendelkezésünkre.
+- Nem lehet megsérülni. Sérülés után nem folytathatjuk a versenyt.
+- Egy trükköt nem lehet kétszer végrehajtani egymás után, változatos futamnak kell lennie.
 
 Milyen trükköket csináljunk, milyen elemeken, hogy maximum pontot kapjunk 3 perc alatt?
-Hogyan tervezzük meg a versenyzőink futamát, hogy pontjaikat maximalizáljuk, amellett, hogy:
-  - [x] 3 perc áll rendelkezésükre
-  - [x] nem sérülhetnek meg
-  - [ ] egy trükköt nem lehet kétszer egymás után megcsinálni
-  - [x] minden trükköt be kell mutatni, amit tudnak
-  - [ ] ??
