@@ -7,6 +7,39 @@ A feladat egy BMX versenyt modellez. Adottak bizonyos trükkök amiket végre tu
 A szabályok a következők:
 - 3 perc áll a rendelkezésünkre.
 - Nem lehet megsérülni. Sérülés után nem folytathatjuk a versenyt.
-- Egy trükköt nem lehet kétszer végrehajtani egymás után, változatos futamnak kell lennie.
 
 Milyen trükköket csináljunk, milyen elemeken, hogy maximum pontot kapjunk 3 perc alatt?
+
+## Kimenet (részlet)
+```
+Osszpontszam: 6644 
+---------------
+|Elem | Trukk | 
+---------------
+Spine - Tailwhip 
+Bank - Tailwhip 
+Quarter - Tailwhip 
+Funbox - Tailwhip 
+Grindbox - Tailwhip 
+Rail - Tailwhip 
+Halfpipe - Tailwhip 
+Ramp - Tailwhip 
+WallRide - Tailwhip 
+Bowl - Tailwhip 
+Volcano - Tailwhip 
+Pool - Tailwhip 
+Hubba - Tailwhip 
+Pyramid - Tailwhip 
+Spine - Barspin 
+Bank - Barspin 
+Quarter - Barspin 
+Funbox - Barspin 
+Grindbox - Barspin 
+Rail - Barspin 
+Halfpipe - Barspin 
+```
+
+## Javítások
+A versenyző a pontjai javításáért egyes trükköket többször gyakorolt, így azok szebbek és több pontot érnek, mint egyébként. 
+További gyakorlásokkal, azért, hogy több ideje legyen más trükköket is bemutatni, javított a trükkök kivitelezési idején.
+<img src="https://user-images.githubusercontent.com/60883286/207029609-c9ed3093-763b-4d49-93fe-2864c60a43ea.png" width="700">
